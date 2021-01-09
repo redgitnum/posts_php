@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body class="bg-gray-200">
-    <nav class="bg-white flex justify-between text-xl px-6 mb-3">
+    <nav class="bg-white flex justify-between text-xl px-6 mb-6">
         <ul class="flex">
             <li class="p-6">
                 <a href="/">Home</a>
@@ -27,7 +27,7 @@
                 <a href="/login">Login</a>
             </li>
             <li class="p-6">
-                <a href="/register">Register</a>
+                <a href="{{ route('register') }}">Register</a>
             </li>
             <li class="p-6">
                 <a href="/logout">Logout</a>
