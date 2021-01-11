@@ -21,12 +21,9 @@
             <h1 class="text-lg mb-2">Posts</h1>
             <ul>
                 @foreach($posts as $post)
-                <li class="mb-3">
-                    <p class="font-bold inline mr-1">{{ $post->user->username }}</p>
-                    <span class="text-gray-500 text-sm">{{ $post->created_at->diffForHumans() }}</span>
-                    <div>{{ $post->body }}</div>
-                </li>
+                <x-post :post="$post"/>
                 @endforeach
+
             </ul>
             {{ $posts->links() }}
         </div>
